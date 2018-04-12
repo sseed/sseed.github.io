@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# cd src
 nuxt generate
-# cd ..
 
 git checkout master
 
