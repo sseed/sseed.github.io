@@ -15,4 +15,4 @@ git commit -a -m "Auto Deploy"
 
 git push origin master
 
-git checkout dev
+git checkout develop
