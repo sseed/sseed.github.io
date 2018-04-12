@@ -8,10 +8,6 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
-const a = 1
-console.log(a)
-
-
 export default {
   components: {
     Logo,
