@@ -5,7 +5,7 @@ git checkout master
 
 git pull origin master --rebase
 
-cp -R src/dist/* .
+cp -R dist/* .
 
 # git clean -fx src
 
