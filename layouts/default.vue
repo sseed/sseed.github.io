@@ -81,7 +81,10 @@ a {
   background: transparent; /* optional: just make scrollbar invisible */
 }
 
-.application.theme--dark {
-  background: #020305;
+.application {
+  width: 100vw;
+  &.theme--dark {
+    background: #020305;
+  }
 }
 </style>

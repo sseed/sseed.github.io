@@ -22,8 +22,8 @@
       </v-layout>
     </v-layout>
     <v-layout class="content-list">
-      <v-flex xs6 v-for="content in contents" :key="content.title">
-        <seed-content :content="content"></seed-content>
+      <v-flex v-for="content in contents" class="content" :key="content.title">
+        <seed-content :title="content.title" :image="content.image"></seed-content>
       </v-flex>
     </v-layout>
   </v-layout>
@@ -54,10 +54,9 @@ export default {
 <style lang="scss" scoped>
 .outter-box {
   height: 100vh;
-  width: 100vw;
   display: grid;
   position: relative;
-  grid-template-rows: 64px 170px 58px 1fr;
+  grid-template-rows: 64px 170px 58px;
   .toolbar {
     background: #020305;
     background-image: url('/today_seeds.png');
@@ -102,8 +101,13 @@ export default {
     }
   }
   .content-list {
-    position: relative;
+    padding: 5px;
     display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    .content {
+      position: relative;
+    }
   }
 }
 </style>

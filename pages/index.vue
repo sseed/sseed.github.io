@@ -5,6 +5,14 @@
 </template>
 
 <script>
+export default {
+  name: 'splash',
+  mounted() {
+    setTimeout(() => {
+      this.$router.push('home')
+    }, 2000)
+  }
+}
 </script>
 
 <style lang="scss" scoped>

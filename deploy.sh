@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
 nuxt generate
 
-git checkout master
+mv dist/* ../sseed.github.io
 
-git pull origin develop --rebase
+cd ../sseed.github.io
 
-cp -R dist/* .
+ga .
 
-git clean -fx .
+gc -m "Auto deploy"
 
-git add .
+gp
 
-git commit -a -m "Auto Deploy"
-
-git push origin master
-
-git checkout develop
+cd ../sseed
