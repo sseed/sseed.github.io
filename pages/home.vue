@@ -21,16 +21,32 @@
         {{ tab }}
       </v-layout>
     </v-layout>
+    <v-layout class="content-list">
+      <v-flex xs6 v-for="content in contents" :key="content.title">
+        <seed-content :content="content"></seed-content>
+      </v-flex>
+    </v-layout>
   </v-layout>
 </template>
 
 <script>
+import SeedContent from '~/components/SeedContent.vue'
+
 export default {
   name: 'home',
   data() {
     return {
-      tabs: ['사회', '정치', '경제', '문화', '과학']
+      tabs: ['사회', '정치', '경제', '문화', '과학'],
+      contents: [
+        { title: '데이트 폭력 방지법', image: '' },
+        { title: '산림보호법', image: '' },
+        { title: '비트코인 규제법', image: '' },
+        { title: '세월호특별법', image: '' }
+      ]
     }
+  },
+  components: {
+    SeedContent
   }
 }
 </script>
@@ -84,6 +100,10 @@ export default {
       justify-self: center;
       align-self: center;
     }
+  }
+  .content-list {
+    position: relative;
+    display: grid;
   }
 }
 </style>
