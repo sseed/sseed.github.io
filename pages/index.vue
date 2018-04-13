@@ -5,20 +5,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
-}
 </script>
 
 <style lang="scss" scoped>
 .layout {
+  height: 100%;
   background: #020305;
+  .splash {
+    // width: 100%;
+    height: 100%;
+  }
 }
 </style>
 
