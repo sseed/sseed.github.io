@@ -3,7 +3,7 @@ nuxt generate
 
 git checkout master
 
-git pull origin master --rebase
+git pull origin develop --rebase
 
 cp -R dist/* .
 
