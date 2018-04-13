@@ -1,7 +1,7 @@
 <template>
-  <!-- <v-app> -->
+  <v-app dark>
     <nuxt/>
-  <!-- </v-app> -->
+  </v-app>
 </template>
 
 <script>
@@ -25,6 +25,10 @@
 </script>
 
 <style lang="scss">
+@font-face {
+    font-family: 'Big John';
+    src: url('/BIG JOHN') format('otf');
+}
 
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -75,5 +79,9 @@ a {
 ::-webkit-scrollbar {
   width: 0px; /* remove scrollbar space */
   background: transparent; /* optional: just make scrollbar invisible */
+}
+
+.application.theme--dark {
+  background: #020305;
 }
 </style>
